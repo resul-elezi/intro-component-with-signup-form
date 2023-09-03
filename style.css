@@ -38,8 +38,40 @@ main {
 }
 .left p {
     padding-top: 1.75rem;
-    padding-bottom: 4.375rem;
+    padding-bottom: 3.25rem;
     text-align: center;
+}
+.form.heading {
+    background-color: var(--blue);
+    padding: 1rem 4.5rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, .15);
+}
+p span {
+    font-weight: 600;
+}
+form {
+    margin-top: 1.5625rem;
+    padding: 1.5rem 1.5rem 1.875rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, .15);
+}
+form input {
+    border-radius: 5px;
+    padding: 1.25rem;
+    font-weight: bold;
+}
+form p {
+    color: var(--grayishBlue);
+    font-size: .75rem;
+    text-align: center;
+}
+form p span {
+    color: var(--red)
 }
 
 
