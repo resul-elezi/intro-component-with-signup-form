@@ -22,6 +22,15 @@ html {
     background-color: var(--red);
     background-image: url(images/bg-intro-mobile.png);
 }
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 6.0625rem;
+    padding-bottom: 4.25rem;
+    max-width: 20.4375rem;
+    min-height: 100vh;
+}
 
 
 .attribution { 
