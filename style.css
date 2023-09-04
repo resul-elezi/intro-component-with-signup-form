@@ -100,3 +100,21 @@ button {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+
+/* Tablet and Desktop */
+
+@media screen and (min-width: 48em) {
+    main {
+        max-width: 90rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .left {
+        padding: 19rem 10.25rem;
+    }
+  }
+  
