@@ -106,6 +106,9 @@ button {
 /* Tablet and Desktop */
 
 @media screen and (min-width: 48em) {
+    html {
+        background-image: url(images/bg-intro-desktop.png);
+    }
     main {
         max-width: 90rem;
         display: flex;
@@ -114,7 +117,24 @@ button {
         justify-content: center;
     }
     .left {
-        padding: 19rem 10.25rem;
+        margin: 0 auto;
+    }
+    .left h1 {
+        font-size: 2.25rem;
+    }
+    .left p {
+        text-align: left;
+    }
+    .right {
+        margin: 0 auto;
+    }
+    .form.heading {
+        width: 34.125rem;
+        height: 3.75rem;
+    }
+    form {
+        width: 34.125rem;
+        height: 29.6875rem;
     }
   }
   
