@@ -44,10 +44,11 @@ main {
 .form.heading {
     background-color: var(--blue);
     padding: 1.25rem 4.5rem;
+    text-align: center;
     border-radius: 10px;
     box-shadow: 0 7px 0 rgba(0, 0, 0, .15);
 }
-p span {
+.form.heading p span {
     font-weight: 600;
 }
 form {
