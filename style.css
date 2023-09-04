@@ -37,13 +37,13 @@ main {
     padding: 0 2.5rem;
 }
 .left p {
-    padding-top: 1.75rem;
-    padding-bottom: 3.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 3.6rem;
     text-align: center;
 }
 .form.heading {
     background-color: var(--blue);
-    padding: 1rem 4.5rem;
+    padding: 1.25rem 4.5rem;
     border-radius: 10px;
     box-shadow: 0 7px 0 rgba(0, 0, 0, .15);
 }
@@ -51,27 +51,45 @@ p span {
     font-weight: 600;
 }
 form {
-    margin-top: 1.5625rem;
-    padding: 1.5rem 1.5rem 1.875rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem 1.5rem;
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    font-size: .75rem;
+    gap: 1rem;
     border-radius: 10px;
     box-shadow: 0 7px 0 rgba(0, 0, 0, .15);
 }
 form input {
     border-radius: 5px;
-    padding: 1.25rem;
-    font-weight: bold;
+    border: 1px solid var(--grayishBlue);
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: .02rem;
 }
 form p {
+    font-size: .75rem;
     color: var(--grayishBlue);
     text-align: center;
 }
 form p span {
     color: var(--red)
+}
+button {
+    background-color: var(--green);
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: .875rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .1);
 }
 
 
