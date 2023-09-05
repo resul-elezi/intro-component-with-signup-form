@@ -90,7 +90,12 @@ button {
     color: white;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    box-shadow: 0 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 0 hsla(154, 59%, 44%, 0.8);
+    transition: background-color .1s linear, box-shadow .1s linear;
+}
+button:hover {
+    background-color: hsl(154, 59%, 60%);
+    box-shadow: 0 3px 0 hsla(154, 59%, 53%, 0.8);
 }
 
 
