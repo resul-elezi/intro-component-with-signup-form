@@ -32,6 +32,19 @@ main {
     min-height: 100vh;
     color: white;
 }
+.error-icon {
+    display: none;
+    width: 1.5rem;
+    margin-top: -3.4375rem;
+    margin-left: 14.375rem;
+}
+.error-text {
+    display: none;
+    text-align: end;
+    color: var(--red);
+    font-size: .65rem;
+    font-style: italic;
+}
 .left h1 {
     font-size: 1.75rem;
     padding: 0 2.5rem;
@@ -126,6 +139,19 @@ button:hover {
         align-items: center;
         justify-content: center;
         gap: 3.5rem;
+    }
+    .error-icon {
+        display: none;
+        width: 1.5rem;
+        margin-top: -3.75rem;
+        margin-left: 25.625rem;
+    }
+    .error-text {
+        display: none;
+        text-align: end;
+        color: var(--red);
+        font-size: .65rem;
+        font-style: italic;
     }
     .left {
         width: 50%;
