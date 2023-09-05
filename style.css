@@ -120,6 +120,7 @@ button {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 3.5rem;
     }
     .left {
         width: 50%;
@@ -136,17 +137,22 @@ button {
     }
     .right {
         width: 50%;
-        padding: 0 10.3125rem 0 .9375rem;
     } 
     .form.heading {
         width: 33.75rem;
         height: 3.75rem;
-        margin-top: 6.25rem;
     }
     form {
         width: 33.75rem;
         height: 29.6875rem;
-        margin-bottom: 7.5rem;
+        padding: 2.5rem;
+        gap: 1.25rem;
+    }
+    form input {
+        width: 28.75rem;
+    }
+    button {
+        width: 28.75rem;
     }
   }
   
