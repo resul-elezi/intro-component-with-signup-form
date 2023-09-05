@@ -113,7 +113,7 @@ button {
     }
     main {
         max-width: 90rem;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         width: 100%;
         display: flex;
@@ -124,35 +124,36 @@ button {
     }
     .left {
         width: 50%;
-        padding-left: 10.3125rem;
-        margin: 0;
+        padding-left: 9.65rem;
+        margin-top: 5rem;
 
     }
     .left h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        line-height: 3.25rem;
         padding-left: 0;
     }
     .left p {
         text-align: left;
+        padding-top: 2.25rem;
     }
     .right {
         width: 50%;
+        padding-right: 9.65rem;
     } 
     .form.heading {
-        width: 33.75rem;
-        height: 3.75rem;
+        max-width: 33.75rem;
     }
     form {
-        width: 33.75rem;
-        height: 29.6875rem;
+        max-width: 33.75rem;
         padding: 2.5rem;
         gap: 1.25rem;
     }
     form input {
-        width: 28.75rem;
+        max-width: 28.75rem;
     }
     button {
-        width: 28.75rem;
+        max-width: 28.75rem;
     }
-  }
+  } 
   
