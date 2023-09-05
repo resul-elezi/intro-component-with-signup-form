@@ -108,33 +108,45 @@ button {
 @media screen and (min-width: 48em) {
     html {
         background-image: url(images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     main {
         max-width: 90rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
     .left {
-        margin: 0 auto;
+        width: 50%;
+        padding-left: 10.3125rem;
+        margin: 0;
+
     }
     .left h1 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
+        padding-left: 0;
     }
     .left p {
         text-align: left;
     }
     .right {
-        margin: 0 auto;
-    }
+        width: 50%;
+        padding: 0 10.3125rem 0 .9375rem;
+    } 
     .form.heading {
-        width: 34.125rem;
+        width: 33.75rem;
         height: 3.75rem;
+        margin-top: 6.25rem;
     }
     form {
-        width: 34.125rem;
+        width: 33.75rem;
         height: 29.6875rem;
+        margin-bottom: 7.5rem;
     }
   }
   
