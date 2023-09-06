@@ -32,18 +32,22 @@ main {
     min-height: 100vh;
     color: white;
 }
-.error-icon {
-    display: none;
-    width: 1.5rem;
-    margin-top: -3.4375rem;
-    margin-left: 14.375rem;
+form div {
+    display: flex;
+    flex-direction: column;
 }
+.error-icon {
+    border: 2px solid var(--red);
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
 .error-text {
-    display: none;
-    text-align: end;
-    color: var(--red);
-    font-size: .65rem;
+    font-size: 12px;
     font-style: italic;
+    color: var(--red);
+    align-self: flex-end;
 }
 .left h1 {
     font-size: 1.75rem;
@@ -91,7 +95,8 @@ form p {
 form p span {
     color: var(--red)
 }
-button {
+.submit {
+    /* display: inline-block; */
     background-color: var(--green);
     border: 0;
     border-radius: 5px;
@@ -106,7 +111,7 @@ button {
     box-shadow: 0 3px 0 hsla(154, 59%, 44%, 0.8);
     transition: background-color .1s linear, box-shadow .1s linear;
 }
-button:hover {
+.submit:hover {
     background-color: hsl(154, 59%, 60%);
     box-shadow: 0 3px 0 hsla(154, 59%, 53%, 0.8);
 }
@@ -140,19 +145,6 @@ button:hover {
         justify-content: center;
         gap: 3.5rem;
     }
-    .error-icon {
-        display: none;
-        width: 1.5rem;
-        margin-top: -3.75rem;
-        margin-left: 25.625rem;
-    }
-    .error-text {
-        display: none;
-        text-align: end;
-        color: var(--red);
-        font-size: .65rem;
-        font-style: italic;
-    }
     .left {
         width: 50%;
         padding-left: 9.65rem;
@@ -183,7 +175,7 @@ button:hover {
     form input {
         max-width: 28.75rem;
     }
-    button {
+    .submit {
         max-width: 28.75rem;
     }
   } 
