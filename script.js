@@ -7,7 +7,7 @@ const E_MAIL = document.getElementById("e-mail");
 const PASS_W = document.getElementById("password");
 const SUBMIT = document.getElementById("submit");
 
-FORM.addEventListener("submit", e => {
+FORM.addEventListener("SUBMIT", (e) => {
 	e.preventDefault();
 	
 	let firstName = FIRST_NAME.value.trim();
@@ -15,23 +15,27 @@ FORM.addEventListener("submit", e => {
 	let eMail = E_MAIL.value.trim();
 	let passWord = PASS_W.value.trim();
 	let passValPat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
+	
 	if(firstName === ""){
-		errorFunc(FIRST_NAME, "First Name cannot be empty")
+		errorFunc(FIRST_NAME, "First Name cannot be empty");
+		document.getElementById("first-name").removeAttribute("placeholder");
 	}
 
 	if(lastName === ""){
-		errorFunc(LAST_NAME, "Last Name cannot be empty")
+		errorFunc(LAST_NAME, "Last Name cannot be empty");
+		document.getElementById("last-name").removeAttribute("placeholder");
 	}
 
 	if(eMail === ""){
-        errorFunc(E_MAIL, "E-Mail cannot be empty")
-    } else if(eMail !== '' && !eMail.match(passValPat)){
+        errorFunc(E_MAIL, "E-Mail cannot be empty");
+		document.getElementById("e-mail").removeAttribute("placeholder");
+    } else if(!eMail.match(passValPat)){
         errorFunc(E_MAIL, "Looks like this is not an email")
     }
 
 	if(passWord === ""){
-		errorFunc(PASS_W, "Password cannot be empty")
+		errorFunc(PASS_W, "Password cannot be empty");
+		document.getElementById("password").removeAttribute("placeholder");
 	}
 })
 
