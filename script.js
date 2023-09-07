@@ -7,5 +7,4 @@ const E_MAIL = document.getElementById("e-mail");
 const PASS_W = document.getElementById("password");
 const INPUT = document.querySelectorAll("input");
 
-console.log(INPUT);
 
