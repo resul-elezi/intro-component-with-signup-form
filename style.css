@@ -140,7 +140,7 @@ form a {
     color: var(--red);
 }
 .hidden {
-    display: block;
+    display: none;
 }
 .attribution { 
     font-size: 11px; text-align: center; 
