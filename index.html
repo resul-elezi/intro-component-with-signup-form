@@ -21,16 +21,16 @@
     <form id="form" action="/" method="post">
       <div class="form-group">
         <div class="input-div">
-          <input type="text" name="prename" id="first-name" placeholder="First Name">
+          <input required type="text" name="prename" id="first-name" placeholder="First Name">
           <span class="error-icon hidden">
             <img src="images/icon-error.svg" alt="error icon">
           </span>
         </div>
-        <div class="error-text hidden">First Name cannot be empty</div>
+        <div class="error-text hidden"></div>
       </div>
       <div class="form-group">
         <div class="input-div">
-        <input type="text" name="name" id="last-name" placeholder="Last Name">
+        <input required type="text" name="name" id="last-name" placeholder="Last Name">
         <span class="error-icon hidden">
           <img src="images/icon-error.svg" alt="error icon">
         </span>
@@ -39,7 +39,7 @@
       </div>
       <div class="form-group">
         <div class="input-div">
-          <input type="email" name="email" id="e-mail" placeholder="Email Address">
+          <input required type="email" name="email" id="e-mail" placeholder="Email Address" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
           <span class="error-icon hidden">
             <img src="images/icon-error.svg" alt="error icon">
           </span>
@@ -49,7 +49,7 @@
       <div class="form-group">
         <div class="input-div">
 
-          <input type="password" name="password" id="password" placeholder="Password">
+          <input required type="password" name="password" id="password" placeholder="Password">
           <span class="error-icon hidden">
             <img src="images/icon-error.svg" alt="error icon">
           </span>
