@@ -10,7 +10,7 @@ const VALIDATE_FORM = formSelector => {
                     const PATTERN_REGEX = new RegExp(INPUT.pattern);
                     return PATTERN_REGEX.test(INPUT.value);
                 },
-                errorMessage: (INPUT) => `Looks like this is not an ${INPUT.placeholder}`,
+                errorMessage: (INPUT) => `Looks like this is not an ${INPUT.placeholder}`
             },
             {
                 attribute: "required",
@@ -30,13 +30,20 @@ const VALIDATE_FORM = formSelector => {
                     ERROR_CONTAINER.textContent = OPTION.errorMessage(INPUT);
                     ERROR_ICON.classList.remove("hidden");
                     ERROR_CONTAINER.classList.remove("hidden");
+                    INPUT.style.border = "1px solid hsl(0, 100%, 74%)";
                     formGroupError = true;
+
+                    if (INPUT.id === "e-mail") {
+                        INPUT.style.color = "hsl(0, 100%, 74%)";
+                    }
                 }
             }
             if(!formGroupError) {
                 // ERROR_CONTAINER.textContent = "";
                 ERROR_ICON.classList.add("hidden");
                 ERROR_CONTAINER.classList.add("hidden");
+                INPUT.style.color = "";
+                INPUT.style.border = "";
             }
         };
 

@@ -107,7 +107,8 @@ input:focus {
 .error-text {
     flex: 1;
     text-align: end;
-    font-size: .625rem;
+    padding-top: .25rem;
+    font-size: .75rem;
     font-style: italic;
     color: var(--red);
 }
